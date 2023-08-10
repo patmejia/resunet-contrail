@@ -22,10 +22,10 @@
 - Model Weights: [Download from Surfdrive](https://surfdrive.surf.nl/files/index.php/s/n1b0L2qfu2PZ6d3) (from [contrail-net GitHub repository](https://github.com/junzis/contrail-net))
 
 ### Hough Space Explanation
-- Definition: Hough Space is a mathematical technique used to identify geometric shapes within images.
-- Transformation: The image space is transformed into a parameter space known as Hough space, using parameters that describe the geometric shapes in the image.
-- Voting Procedure: The Hough transform finds local maxima corresponding to geometric shapes.
-- Extensions: Initially used to identify lines but extended to arbitrary shapes, including circles and ellipses.
+The Hough Transform is a mathematical technique used to identify geometric shapes within an image. It works by transforming the image space into a parameter space, known as Hough Space, using parameters that describe the geometric shapes in the image. For example, a line can be described by its slope and intercept, while a circle can be described by its center and radius. The Hough Transform is a voting procedure that finds local maxima in Hough Space, which correspond to geometric shapes in the image space. Originally used to identify lines, the Hough Transform has been extended to arbitrary shapes, including circles and ellipses. 
+
+Hough Transform is computationally expensive and sensitive to noise. However, it is robust to occlusion and can be used to detect shapes with a high degree of accuracy. 
+
   
 <img width="707" alt="Hough Space generation example" src="https://github.com/patmejia/resunet-contrail/assets/92187562/0e389674-e0f1-41ef-b1bc-b59f86e82950">
 
@@ -91,9 +91,7 @@ This project is licensed under the terms of the [GNU GENERAL PUBLIC LICENSE](LIC
 
 ---
 
-<div style="background-color: #1f1f1f; color: #f2f2f2; padding: 10px; border-radius: 5px;"><img width="425" alt="Screenshot 2023-08-09 at 11 21 20 PM" src="https://github.com/patmejia/resunet-contrail/assets/92187562/1d888431-9038-4b16-886e-a5ca45f7b3c0">
-
-
+<div style="background-color: #1f1f1f; color: #f2f2f2; padding: 10px; border-radius: 5px;">
   <h3>If you found this repository helpful...</h3>
   <p>Please consider starring this repository to help others find it. Your support helps me maintain and develop high-quality code and pursue my career in data analytics. Feedback is always appreciated. Thank you for reading this study. I hope you found it insightful and wish you all the best in your data science journey.</p>
   <p style="text-align: right;">
