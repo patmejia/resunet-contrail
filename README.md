@@ -1,6 +1,7 @@
-# Utilizing Augmented Transfer Learning and Hough Space for Enhanced Detection
+# Enhanced Detection using Augmented Transfer Learning and Hough Space
+###### based on [junzis/contrail-net](https://github.com/junzis/contrail-net)
+#### PyTorch ResUNet for Contrail Detection & Segmentation: Optimized for Satellite Images with Augmented Transfer Learning & SR Loss
 
-## Neural Networks Models for Contrail Detection and Segmentation
 
 ### Project Overview
 - Framework: PyTorch
@@ -25,7 +26,12 @@
 - Transformation: The image space is transformed into a parameter space known as Hough space, using parameters that describe the geometric shapes in the image.
 - Voting Procedure: The Hough transform finds local maxima corresponding to geometric shapes.
 - Extensions: Initially used to identify lines but extended to arbitrary shapes, including circles and ellipses.
+  
+<img width="707" alt="Hough Space generation example" src="https://github.com/patmejia/resunet-contrail/assets/92187562/0e389674-e0f1-41ef-b1bc-b59f86e82950">
 
+*Example of Hough Space generation*
+
+  
 ### Scientific Contributions
 - Application in Contrail Detection: Utilizes Hough Space for contrail line detection.
 - Innovation by Junzi Sun and Esther Roosenbrand: Introduced augmented transfer learning and SR Loss.
@@ -38,18 +44,19 @@
 
 ### Citation
 ```bibtex
-@misc{sun2021contrailnet,
-  author = {Sun, Junzi and others},
-  title = {contrail-net: Neural network models for contrail detection and segmentation},
-  year = {2021},
-  howpublished = {https://github.com/junzis/contrail-net},
-  note = {Accessed: 2023-08-09}
+@misc{sun2023contrailnet,
+  author = {Sun, Junzi and Roosenbrand, Esther},
+  title = {Flight Contrail Segmentation via Augmented Transfer Learning with Novel SR Loss Function in Hough Space},
+  year = {2023},
+  eprint = {2307.12032},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CV}
 }
 ```
 
 ---
 
-## Setup Instructions for @junzis' contrail-net project
+## Setup Instructions
 
 ### Automated Setup - macOS
 ```bash
@@ -84,7 +91,9 @@ This project is licensed under the terms of the [GNU GENERAL PUBLIC LICENSE](LIC
 
 ---
 
-<div style="background-color: #1f1f1f; color: #f2f2f2; padding: 10px; border-radius: 5px;">
+<div style="background-color: #1f1f1f; color: #f2f2f2; padding: 10px; border-radius: 5px;"><img width="425" alt="Screenshot 2023-08-09 at 11 21 20 PM" src="https://github.com/patmejia/resunet-contrail/assets/92187562/1d888431-9038-4b16-886e-a5ca45f7b3c0">
+
+
   <h3>If you found this repository helpful...</h3>
   <p>Please consider starring this repository to help others find it. Your support helps me maintain and develop high-quality code and pursue my career in data analytics. Feedback is always appreciated. Thank you for reading this study. I hope you found it insightful and wish you all the best in your data science journey.</p>
   <p style="text-align: right;">
